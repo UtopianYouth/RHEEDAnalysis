@@ -69,13 +69,13 @@ void MainWindow::about_info_show(){
 void MainWindow::go_rheed_image_handle_view(){
     RHEEDImageHandleView* rheed_image_handle_view = new RHEEDImageHandleView();
     this->setCentralWidget(rheed_image_handle_view);
-    this->setWindowTitle("RHEED 图像分析");
+    this->setWindowTitle("RHEED 图像分析/图像");
 }
 
 void MainWindow::go_rheed_video_handle_view(){
     RHEEDVideoHandleView* rheed_video_handle_view = new RHEEDVideoHandleView();
     this->setCentralWidget(rheed_video_handle_view);
-    this->setWindowTitle("RHEED 视频序列分析");
+    this->setWindowTitle("RHEED 图像分析/视频序列");
 }
 
 void MainWindow::return_mainwindow(){
@@ -84,6 +84,6 @@ void MainWindow::return_mainwindow(){
     connect(card_layout_panel->rheed_image_button,SIGNAL(clicked()),this,SLOT(go_rheed_image_handle_view()));
     connect(card_layout_panel->rheed_video_button,SIGNAL(clicked()),this,SLOT(go_rheed_video_handle_view()));
     this->setCentralWidget(card_layout_panel);
-    this->setWindowTitle("RHEED 图像数据处理软件");
+    this->setWindowTitle("RHEED 图像分析");
 }
 
