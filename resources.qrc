@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>help_icon.png</file>
+        <file>image_icon.png</file>
+        <file>video_icon.png</file>
+        <file>background.jpg</file>
+        <file>run_icon.png</file>
+        <file>stop_icon.png</file>
+        <file>save_icon.png</file>
+    </qresource>
+</RCC>
